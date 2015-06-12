@@ -1,27 +1,43 @@
-<p id="notice"><%= notice %></p>
+  <div class="hero">
+     <section class="plans">
 
-<h1>Listing Boards</h1>
+<!-- MAIN BOARD -->
+     <div class="content_window_main">
 
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <div class="content_window_main_table">
+        <br/>
+        <span class="plan-name">xxxxxxxxxxxxx</span>
+        <span class="plan-price">MAIN BOARD GOES HERE</span>
+        <span class="plan-per-month-box">xxxxxxxxxxxx</span>
+      </div>
 
-  <tbody>
-    <% @boards.each do |board| %>
-      <tr>
-        <td><%= board.category %></td>
-        <td><%= link_to 'Show', board %></td>
-        <td><%= link_to 'Edit', edit_board_path(board) %></td>
-        <td><%= link_to 'Destroy', board, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="plan-nav-item">
+        xxxxxxxxxx
+      </div>
 
-<br>
+      <div class="plan-choose-button-box">
+        <div class="plan-choose-button-inner">
+          xxxxxx
+        </div>
+      </div>
 
-<%= link_to 'New Board', new_board_path %>
+    </div>
+<!-- MAIN BOARD -->
+
+    <!-- USER PANEL -->
+
+    <div class="content_window_user">
+
+      <div class="content_window_user_table">
+        <span class="plan-name">USER PANEL GOES HERE</span>
+        <span class="plan-per-month-box">xxxxxxx</span>
+      </div>
+
+      <div class="plan-choose-button-box">
+        <div class="plan-choose-button-inner">xxxxxxxx</div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- END USER PANEL -->
