@@ -1,43 +1,60 @@
-  <div class="hero">
-     <section class="plans">
 
-<!-- MAIN BOARD -->
-     <div class="content_window_main">
+    <!-- MAIN BOARD -->
+     <div class="links-window-outer">
 
-      <div class="content_window_main_table">
+      <div class="links-window-inner">
         <br/>
-        <span class="plan-name">xxxxxxxxxxxxx</span>
-        <span class="plan-price">MAIN BOARD GOES HERE</span>
-        <span class="plan-per-month-box">xxxxxxxxxxxx</span>
-      </div>
 
-      <div class="plan-nav-item">
-        xxxxxxxxxx
-      </div>
+        <!-- <span class="plan-name">xxxxxxxxxxxxx</span> -->
 
-      <div class="plan-choose-button-box">
-        <div class="plan-choose-button-inner">
-          xxxxxx
-        </div>
-      </div>
+        <span class="links-page-title">
+       ALL YOUR LINKS ARE BELONG TO US
+       <br/>
+       <br/>
+        </span>
 
-    </div>
-<!-- MAIN BOARD -->
+    <div class="links-title">
+<% @links.each do |link| %>
+    <li> <%= link_to link.title %> </li>
+<br/>
+  <% end %>
 
-    <!-- USER PANEL -->
-
-    <div class="content_window_user">
-
-      <div class="content_window_user_table">
-        <span class="plan-name">USER PANEL GOES HERE</span>
-        <span class="plan-per-month-box">xxxxxxx</span>
-      </div>
-
-      <div class="plan-choose-button-box">
-        <div class="plan-choose-button-inner">xxxxxxxx</div>
-      </div>
-    </div>
-  </section>
   </div>
 
+      </div>
+    </div>
+<!-- MAIN BOARD-->
+
+<!-- USER PANEL -->
+    <div class="user-window-outer">
+
+          <div class="user-window-inner">
+            <span class="user-login-title">USER LOGIN HERE</span>
+             <span class="user-window-text">Text</span>
+          </div>
+
+        <!-- USER NAV -->
+
+          <div class="plan-choose-button-box">
+           PUT TEXT FIELD HERE
+            <div class="plan-choose-button-inner">
+              SUBMIT LINK
+            </div>
+          </div>
+
+
+          <div class="plan-choose-button-box">
+               PUT TEXT FIELD HERE
+            <div class="plan-choose-button-inner">
+              SUBMIT TEXT
+            </div>
+          </div>
+
+        <div class="plan-choose-button-box">
+          <div class="plan-choose-button-inner">
+            xxxxxx
+          </div>
+        </div>
+        <!-- USER NAV -->
+      </div>
   <!-- END USER PANEL -->

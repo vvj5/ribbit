@@ -5,6 +5,8 @@ class BoardsController < ApplicationController
   # GET /boards.json
   def index
     @boards = Board.all
+    @links = Link.all
+    # @link = Link.new(link_params)
   end
 
   # GET /boards/1
