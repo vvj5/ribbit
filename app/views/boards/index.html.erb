@@ -1,26 +1,19 @@
 
     <!-- MAIN BOARD -->
-     <div class="links-window-outer">
 
-      <div class="links-window-inner">
-        <br/>
+      <div class="links-panel">
 
-        <span class="text-links-page-title">
-       ALL YOUR LINKS ARE BELONG TO US
-       <br/>
-       <br/>
-        </span>
+          <div class="text-links-page-title">
+            ALL YOUR LINKS ARE BELONG TO US
+          </div>
 
-    <div class="text-links-title">
-<% @links.each do |link| %>
-    <li> <%= link_to link.title %> </li>
-<br/>
-  <% end %>
-
-  </div>
+          <div class="text-links-title">
+              <% @links.each do |link| %>
+              <li><%= link_to link.title %></li>
+              <% end %>
+          </div>
 
       </div>
-    </div>
 <!-- MAIN BOARD-->
 
 <!-- USER PANEL -->
@@ -34,30 +27,26 @@
         <!-- USER NAV -->
 
           <div class="user-action-casing">
-           PUT TEXT FIELD HERE
-
-
-
-            <div class="user-action-button">
-              SUBMIT LINK
+            <div class="text-submission">
+              POST A LINK HERE
+              <%= render "links/form_link" %>
             </div>
           </div>
-
 
           <div class="user-action-casing">
-
-               PUT TEXT FIELD HERE
-
-            <div class="user-action-button">
-              SUBMIT TEXT
+            <div class="text-submission">
+              POST A LINK HERE
+              <%= render "links/form_link" %>
             </div>
           </div>
 
-        <div class="user-action-casing">
-          <div class="user-action-button">
-            xxxxxx
+         <div class="user-action-casing">
+            <div class="text-submission">
+              GET AN ACCOUNT HERE
+              <%= render "links/form_link" %>
+            </div>
           </div>
         </div>
         <!-- USER NAV -->
-      </div>
+    </div>
   <!-- END USER PANEL -->

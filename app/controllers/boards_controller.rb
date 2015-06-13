@@ -6,6 +6,7 @@ class BoardsController < ApplicationController
   def index
     @boards = Board.all
     @links = Link.all
+    @link = Link.new
   end
 
   # GET /boards/1
@@ -16,6 +17,7 @@ class BoardsController < ApplicationController
   # GET /boards/new
   def new
     @board = Board.new
+    @link = Link.new
   end
 
   # GET /boards/1/edit

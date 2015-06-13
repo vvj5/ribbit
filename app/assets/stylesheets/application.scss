@@ -57,9 +57,9 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
   font-weight: 600;
   letter-spacing: 4px;
+  margin-bottom: 40px;
 }
 
 .text-links-title {
@@ -70,8 +70,7 @@ a:active {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 175%;
-  border: 1px solid red;
+  line-height: 300%;
 }
 
   .text-user-title {
@@ -94,21 +93,27 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
+
+.text-submission{
+  color: #666666;
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 // TEXT STYLES ABOVE
 
 
-.links-window-outer {
+.links-panel {
   width: 76%;
   float: left;
-  background-color: yellow;
   margin-top: 1px;
   margin-bottom: 1px;
-}
-
-.links-window-inner {
+  height: 800px;
   background-color: #C0D9AF;
   height: 400px;
-  width: 100%;
   padding-top: 20px;
   border: 1px solid #cccccc;
   }
@@ -117,7 +122,8 @@ a:active {
   width: 23.6%;
   margin-top: 1px;
   float: right;
-  color: #333333
+  color: #333333;
+  background-color: white;
 }
 
 .user-window-inner {
@@ -125,38 +131,22 @@ a:active {
   height: 100px;
   width: 100%;
   padding-top: 20px;
-  border: 1px solid #999999;
+  border: 1px solid #cccccc;
   }
 
-
-.plan-nav-item {
-  color: #555555;
-  background-color: #eeeeee;
-  font-family: Helvetica;
-  border-left: 1px solid #bbbbbb;
-  border-right: 1px solid #bbbbbb;
-  border-bottom: 1px solid #bbbbbb;
-  font-size: 18px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 40px;
-  padding-top: 15px;
-  text-align: center;
-}
-
 .user-action-casing {
-  color: #555555;
   background-color: #eeeeee;
   font-family: Helvetica;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border: 1px solid #cccccc;
   font-size: 13px;
   font-weight: bold;
+  color: #555555;
   margin-left: auto;
   margin-right: auto;
-  height: 35px;
-  padding-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 45px;
+  padding-top: 10px;
   padding-bottom: 20px;
   text-align: center;
 }
