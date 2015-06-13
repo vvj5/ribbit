@@ -6,7 +6,6 @@ class BoardsController < ApplicationController
   def index
     @boards = Board.all
     @links = Link.all
-    # @link = Link.new(link_params)
   end
 
   # GET /boards/1

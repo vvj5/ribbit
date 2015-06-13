@@ -49,7 +49,7 @@ a:active {
     color: red;
 }
 
-.links-page-title {
+.text-links-page-title {
   color: red;
   font-family: Verdana;
   font-size: 24px;
@@ -62,7 +62,7 @@ a:active {
   letter-spacing: 4px;
 }
 
-.links-title {
+.text-links-title {
   color: #333333;
   font-family: Verdana;
   font-size: 16px;
@@ -72,11 +72,9 @@ a:active {
   margin-right: auto;
   line-height: 175%;
   border: 1px solid red;
-  // tr:nth-child(even) {background: #CCC};
-  // tr:nth-child(odd) {background: #FFF};
 }
 
-  .user-login-title {
+  .text-user-title {
   color: white;
   font-family: Verdana;
   font-size: 18px;
@@ -87,7 +85,7 @@ a:active {
   font-weight: 600;
 }
 
-.user-window-text {
+.text-user-window{
   color: white;
   font-family: Verdana;
   font-size: 16px;
@@ -96,9 +94,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
+// TEXT STYLES ABOVE
 
 
 .links-window-outer {
@@ -111,7 +107,6 @@ a:active {
 
 .links-window-inner {
   background-color: #C0D9AF;
-  // background: pink;
   height: 400px;
   width: 100%;
   padding-top: 20px;
@@ -133,11 +128,6 @@ a:active {
   border: 1px solid #999999;
   }
 
-.plan-option-parent {
-  margin: 10px; }
-
-
-
 
 .plan-nav-item {
   color: #555555;
@@ -154,7 +144,7 @@ a:active {
   text-align: center;
 }
 
-.plan-choose-button-box {
+.user-action-casing {
   color: #555555;
   background-color: #eeeeee;
   font-family: Helvetica;
@@ -171,7 +161,7 @@ a:active {
   text-align: center;
 }
 
-.plan-choose-button-inner {
+.user-action-button {
   border: 2px solid #666666;
   border-radius: 25px;
   width: 100px;
