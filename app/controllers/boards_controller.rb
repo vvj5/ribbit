@@ -7,6 +7,8 @@ class BoardsController < ApplicationController
     @boards = Board.all
     @links = Link.all
     @link = Link.new
+    @user = User.new
+    # @user = User.find(:email, :password)
   end
 
   # GET /boards/1
