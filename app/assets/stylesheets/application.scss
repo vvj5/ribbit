@@ -43,14 +43,14 @@ a:visited {
     color: #333333;
 }
 a:hover {
-    color: green;
+    background-color: white;
 }
 a:active {
-    color: green;
+    color: black;
 }
 
 .text-links-page-title {
-  color: green;
+  color: white;
   font-family: Verdana;
   font-size: 24px;
   text-align: center;
@@ -59,16 +59,15 @@ a:active {
   margin-bottom: 40px;
 }
 
-.text-links-title {
-  color: #333333;
+.text-links-title-all {
+  color: darkgreen;
   font-family: Verdana;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  line-height: 300%;
   font-weight: bold;
-  width: 71%;
+  width: 70%;
   float: left;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -76,6 +75,26 @@ a:active {
   padding: 20px;
   border: 1px solid #cccccc;
 }
+
+.text-links-user {
+  color: black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.text-links-title {
+  color: black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-links-body {
+    color: black;
+    font-family: Verdana;
+    font-weight: normal;
+  }
 
   .text-user-title {
   color: white;
@@ -114,21 +133,16 @@ a:active {
 
 // TEXT STYLES ABOVE
 
-
-// .links-panel {
-//   border: 1px solid #cccccc;
-//   }
-
 .user-window-outer {
-  width: 23.6%;
+  width: 25.3%;
   margin-top: 1px;
-  float: right;
+  float: left;
   color: #333333;
   background-color: white;
 }
 
 .user-window-inner {
-  background-color: #77896C;
+  background-color: darkgreen;
   height: 100px;
   width: 100%;
   padding-top: 20px;

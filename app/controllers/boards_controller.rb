@@ -1,14 +1,10 @@
 class BoardsController < ApplicationController
   before_action :set_board, only: [:show, :edit, :update, :destroy]
 
-  # GET /boards
-  # GET /boards.json
   def index
-    # render json: params.inspect
     @boards = Board.all
     @links = Link.all
     @link = Link.new
-    # @link = Link.find(params[:id])
     @user = User.new
   end
 
@@ -17,7 +13,6 @@ class BoardsController < ApplicationController
   def show
   end
 
-  # GET /boards/new
   def new
     @board = Board.new
     @link = Link.new

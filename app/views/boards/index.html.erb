@@ -1,20 +1,38 @@
 
     <!-- MAIN BOARD -->
 
-      <!-- <div class="links-panel"> -->
 
-          <div class="text-links-title">
+   <div class="text-links-title-all">
            <span class="text-links-page-title">
             ALL YOUR LINKS ARE BELONG TO US
           </span>
-             <% @links.each do |link| %> <li>
-             <%= link_to link.title, link_path(link.id) %>
-              <% end %></li>
-          </div>
 
-<!-- , links_show_path(link_id) -->
+<table>
+  <% @links.each do |link| %>
+    <tr>
+      <td>
+        <hr color="#666666", noshade>
+        USER: <span class="text-links-user"><%= link.user.name.capitalize %></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TITLE: <span class="text-links-title"><%= link.title %></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        POST: <span class="text-links-body">
+        <%= link.body %><br><br></td>
+    </tr>
+  <tbody>
+    <% end %>
+  </tbody>
+</table>
 
-      </div>
+<br>
+  </div>
+
 <!-- MAIN BOARD-->
 
 <!-- USER PANEL -->
