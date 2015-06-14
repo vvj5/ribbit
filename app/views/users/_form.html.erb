@@ -14,17 +14,17 @@
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %><br>
-
+    <br>
     <%= f.label :email %><br>
     <%= f.text_field :email %><br>
-
+    <br>
     <%= f.label :password %><br>
     <%= f.text_field :password %><br>
-
-    <%= f.label :password_confirmation, "Confirmation" %><br>
+    <br>
+    <%= f.label :password_confirmation, "confirm password" %><br>
     <%= f.password_field :password_confirmation %><br>
-
   </div>
+  <br>
   <div class="actions">
     <%= f.submit(value = "create account", options = {}) %>
   </div>

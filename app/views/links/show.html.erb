@@ -11,18 +11,8 @@
 </p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
-
-<p>
   <strong>User:</strong>
-  <%= @link.user %>
-</p>
-
-<p>
-  <strong>Board:</strong>
-  <%= @link.board %>
+  <%= @link.user.name %>
 </p>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |

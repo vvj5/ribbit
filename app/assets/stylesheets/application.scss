@@ -37,28 +37,25 @@ footer {
 // TEXT STYLES BELOW
 
 a:link {
-    color: #666666;
+    color: #333333;
 }
 a:visited {
-    color: #666666;
+    color: #333333;
 }
 a:hover {
-    color: red;
+    color: green;
 }
 a:active {
-    color: red;
+    color: green;
 }
 
 .text-links-page-title {
-  color: red;
+  color: green;
   font-family: Verdana;
   font-size: 24px;
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 600;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-bottom: 40px;
 }
 
@@ -67,20 +64,23 @@ a:active {
   font-family: Verdana;
   font-size: 16px;
   display: block;
-  width: 600px;
   margin-left: auto;
   margin-right: auto;
   line-height: 300%;
+  font-weight: bold;
+  width: 71%;
+  float: left;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-image: url("cardboard.jpg");
+  padding: 20px;
+  border: 1px solid #cccccc;
 }
 
   .text-user-title {
   color: white;
   font-family: Verdana;
   font-size: 18px;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 600;
 }
 
@@ -88,10 +88,6 @@ a:active {
   color: white;
   font-family: Verdana;
   font-size: 16px;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .text-form-title{
@@ -113,21 +109,15 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 // TEXT STYLES ABOVE
 
 
-.links-panel {
-  width: 76%;
-  float: left;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  background-color: #C0D9AF;
-  height: 400px;
-  padding-top: 20px;
-  border: 1px solid #cccccc;
-  }
+// .links-panel {
+//   border: 1px solid #cccccc;
+//   }
 
 .user-window-outer {
   width: 23.6%;
@@ -142,6 +132,7 @@ a:active {
   height: 100px;
   width: 100%;
   padding-top: 20px;
+  text-align: center;
   border: 1px solid #cccccc;
   }
 
@@ -150,7 +141,6 @@ a:active {
   font-family: Verdana;
   border: 1px solid #cccccc;
   font-size: 13px;
-  // font-weight: bold;
   color: #555555;
   margin-left: auto;
   margin-right: auto;
@@ -167,8 +157,6 @@ a:active {
   border-radius: 25px;
   width: 100px;
   height: 20px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 5px;
 }
 

@@ -1,17 +1,18 @@
 
     <!-- MAIN BOARD -->
 
-      <div class="links-panel">
-
-          <div class="text-links-page-title">
-            ALL YOUR LINKS ARE BELONG TO US
-          </div>
+      <!-- <div class="links-panel"> -->
 
           <div class="text-links-title">
-              <% @links.each do |link| %>
-              <li><%= link_to link.title %></li>
-              <% end %>
+           <span class="text-links-page-title">
+            ALL YOUR LINKS ARE BELONG TO US
+          </span>
+             <% @links.each do |link| %> <li>
+             <%= link_to link.title, link_path(link.id) %>
+              <% end %></li>
           </div>
+
+<!-- , links_show_path(link_id) -->
 
       </div>
 <!-- MAIN BOARD-->
@@ -21,6 +22,7 @@
 
           <div class="user-window-inner">
             <span class="text-user-title">USER LOGIN HERE</span>
+            <br>
              <span class="text-user-window">Text</span>
           </div>
 
@@ -43,12 +45,12 @@
 
             <span class="text-form-title">
              <br>GET AN ACCOUNT </span>
-             <br>
+
               <div class="text-form">
               <%= render "users/form" %>
             </div>
 
         </div>
         <!-- USER NAV -->
-    </div>
+    <!-- </div> -->
   <!-- END USER PANEL -->

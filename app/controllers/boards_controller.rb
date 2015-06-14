@@ -4,11 +4,12 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.json
   def index
+    # render json: params.inspect
     @boards = Board.all
     @links = Link.all
     @link = Link.new
+    # @link = Link.find(params[:id])
     @user = User.new
-    # @user = User.find(:email, :password)
   end
 
   # GET /boards/1
