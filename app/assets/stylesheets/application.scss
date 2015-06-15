@@ -8,22 +8,162 @@ body {
   height: 100%;
   }
 
-header {
+.header {
   background-color: white;
-  height: 35px;
-  color: #777777;
-  font-family: Helvetica;
-  font-size: 18px;
-  margin: 10px 20px;
+  border: 1px solid #F77825;
+  @include span-columns(12);
+  color: #666666;
+  font-family: Verdana;
+  font-size: 36px;
+  // font-weight: bold;
+  -webkit-text-stroke: 1px #CBE86B;
+  border-radius: 5px;
+  text-shadow: 0px 1px 1px #4d4d4d;
 }
 
-.header-box {
-  background-color: white;
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #F77825;
+// #retro h1 {
+//   color: #d7ceb2;
+//   text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+//   letter-spacing: 10px;
+// }
+
+.footer {
+// Uncomment this for a sticky footer.
+}
+
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+html, body {
+ height: 100%;
+}
+
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
+
+.footer-2, .wrapper-for-content-outside-of-footer:after {
+  height: 17em;
+
+  @include media($large-screen) {
+    height: 4em;
+  }
+}
+
+.footer-2 {
+  $base-spacing: 1.5em !default;
+  $action-color: #D3643B;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: $base-spacing;
   width: 100%;
+  display: inline-block;
+
+  .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+    @include media($large-screen) {
+      float: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-logo img {
+    height: 1.6em;
+  }
+
+  ul {
+    line-height: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+
+    @include media($large-screen) {
+      float: left;
+      line-height: 1.8em;
+      margin-left: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    font-weight: 800;
+    list-style: none;
+    padding-right: 1em;
+
+    @include media($large-screen) {
+      display: inline;
+      text-align: left;
+    }
+  }
+
+  ul li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  .footer-secondary-links {
+    @include media($large-screen) {
+      float: right;
+    }
+
+    li {
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+
+    ul.footer-social {
+      margin: 1em 0 0 0;
+
+      @include media($large-screen) {
+        float: right;
+        margin-top: 0;
+      }
+
+      li {
+        font-size: 1em;
+        float: left;
+        line-height: 0;
+        margin: 0;
+        padding-right: 0.7em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      img {
+        height: 1.6em;
+        opacity: 0.7;
+        padding: 1px;
+
+        &:focus,
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.main-body {
+  @include row();
 }
 
 
@@ -36,19 +176,19 @@ a:link {
 a:visited {
     color: #333333;
 }
-a:hover {
-    background-color: #F2A624;
-}
+// a:hover {
+//     background-color: #F2A624;
+// }
 a:active {
     color: black;
 }
 
+
 .text-links-page-title {
   color: #666666;
   font-family: Verdana;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
-  font-weight: 600;
   letter-spacing: 3px;
   margin-bottom: 40px;
 }
@@ -57,16 +197,14 @@ a:active {
   color: #D3643B;
   font-family: Verdana;
   font-size: 14px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: bold;
   margin-top: 1px;
   margin-bottom: 1px;
   background-color: #FCFBE3;
   padding: 20px;
   border: 1px solid #F77825;
-  @include span-columns(8);
+  @include span-columns(9 of 12, block-collapse);
+  border-radius: 5px;
 }
 
 .text-links-user {
@@ -87,6 +225,7 @@ a:active {
     color: #666666;
     font-family: Verdana;
     font-weight: normal;
+    overflow: auto;
   }
 
   .text-user-title {
@@ -125,11 +264,10 @@ a:active {
 // TEXT STYLES ABOVE
 
 .user-window-outer {
-  width: 25.3%;
   margin-top: 1px;
-  float: right;
   background-color: #CBE86B;
   border: 1px solid #D3643B;
+  @include span-columns(3);
 }
 
 .user-window-inner {
