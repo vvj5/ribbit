@@ -1,5 +1,10 @@
+
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
 body {
-  background: white;
+  background: #94C7B6;
   height: 100%;
   }
 
@@ -12,27 +17,16 @@ header {
   margin: 10px 20px;
 }
 
-footer {
-  height: 20px;
-  background-color: black;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Helvetica;
-  color: #666666;
-  line-height: 1.7;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
 .header-box {
   background-color: white;
   height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #F77825;
   width: 100%;
 }
+
+
 
 // TEXT STYLES BELOW
 
@@ -43,14 +37,14 @@ a:visited {
     color: #333333;
 }
 a:hover {
-    background-color: white;
+    background-color: #F2A624;
 }
 a:active {
     color: black;
 }
 
 .text-links-page-title {
-  color: white;
+  color: #666666;
   font-family: Verdana;
   font-size: 24px;
   text-align: center;
@@ -60,38 +54,37 @@ a:active {
 }
 
 .text-links-title-all {
-  color: darkgreen;
+  color: #D3643B;
   font-family: Verdana;
   font-size: 14px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
-  width: 70%;
-  float: left;
   margin-top: 1px;
   margin-bottom: 1px;
-  background-image: url("cardboard.jpg");
+  background-color: #FCFBE3;
   padding: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #F77825;
+  @include span-columns(8);
 }
 
 .text-links-user {
-  color: black;
+  color: #666666;
   font-family: Verdana;
   font-size: 14px;
   font-weight: normal;
 }
 
 .text-links-title {
-  color: black;
+  color: #1C140D;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
 }
 
 .text-links-body {
-    color: black;
+    color: #666666;
     font-family: Verdana;
     font-weight: normal;
   }
@@ -100,7 +93,6 @@ a:active {
   color: white;
   font-family: Verdana;
   font-size: 18px;
-  font-weight: 600;
 }
 
 .text-user-window{
@@ -110,10 +102,9 @@ a:active {
 }
 
 .text-form-title{
-  color: #666666;
+  color: white;
   font-family: Verdana;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -136,26 +127,23 @@ a:active {
 .user-window-outer {
   width: 25.3%;
   margin-top: 1px;
-  float: left;
-  color: #333333;
-  background-color: white;
+  float: right;
+  background-color: #CBE86B;
+  border: 1px solid #D3643B;
 }
 
 .user-window-inner {
-  background-color: darkgreen;
+  background-color: #D3643B;
   height: 100px;
   width: 100%;
   padding-top: 20px;
   text-align: center;
-  border: 1px solid #cccccc;
+  border: 1px solid #D3643B;
   }
 
 .user-action-casing {
-  background-color: #eeeeee;
-  font-family: Verdana;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  color: #555555;
+  background-color: #666666;
+  border: 1px solid #D3643B;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -163,11 +151,10 @@ a:active {
   height: 45px;
   padding-top: 10px;
   padding-bottom: 20px;
-  text-align: center;
 }
 
 .user-action-button {
-  border: 2px solid #666666;
+  border: 1px solid #D3643B;
   border-radius: 25px;
   width: 100px;
   height: 20px;
