@@ -11,21 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name, "name" %><br>
-    <%= f.text_field :name %><br>
-    <br>
-    <%= f.label :email, "email" %><br>
-    <%= f.text_field :email %><br>
-    <br>
-    <%= f.label :password, "password" %><br>
-    <%= f.text_field :password %><br>
-    <br>
-    <%= f.label :password_confirmation, "confirm password" %><br>
-    <%= f.password_field :password_confirmation %><br>
+  <div class="text-user-create-form">
+  CREATE AN ACCOUNT
   </div>
-  <br>
-  <div class="actions">
+
+    <%= f.label :name, "name" %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :email, "email" %>
+    <%= f.text_field :email %>
+    <br>
+    <%= f.label :password, "password" %>
+    <%= f.text_field :password %>
+    <br>
+    <%= f.label :password_confirmation, "confirm password" %>
+    <%= f.password_field :password_confirmation %>
+    <br>
+
     <%= f.submit(value = "create account", options = {}) %>
-  </div>
+
 <% end %>

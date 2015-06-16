@@ -13,19 +13,13 @@ body {
   border: 1px solid #F77825;
   @include span-columns(12);
   color: #666666;
-  font-family: Verdana;
-  font-size: 36px;
-  // font-weight: bold;
+  font-family: Impact;
+  font-size: 50px;
+  font-weight: bold;
   -webkit-text-stroke: 1px #CBE86B;
-  border-radius: 5px;
+  border-radius: 10px;
   text-shadow: 0px 1px 1px #4d4d4d;
 }
-
-// #retro h1 {
-//   color: #d7ceb2;
-//   text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
-//   letter-spacing: 10px;
-// }
 
 .footer {
 // Uncomment this for a sticky footer.
@@ -68,6 +62,7 @@ html, body {
   background: $footer-background;
   padding: $base-spacing;
   width: 100%;
+    border-radius: 10px;
   display: inline-block;
 
   .footer-logo {
@@ -198,13 +193,14 @@ a:active {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #FCFBE3;
   padding: 20px;
   border: 1px solid #F77825;
-  @include span-columns(9 of 12, block-collapse);
-  border-radius: 5px;
+  @include span-columns(9);
+  border-radius: 10px;
+
 }
 
 .text-links-user {
@@ -226,7 +222,13 @@ a:active {
     font-family: Verdana;
     font-weight: normal;
     overflow: auto;
+    height: 50px;
   }
+
+.text-links-body-style {
+  background-color: white;
+}
+
 
   .text-user-title {
   color: white;
@@ -261,41 +263,45 @@ a:active {
   margin-top: 20px;
 }
 
+  .text-user-create-form {
+  color: #666666;
+  font-family: Verdana;
+  font-size: 18px;
+  text-align: center;
+}
+
 // TEXT STYLES ABOVE
 
 .user-window-outer {
-  margin-top: 1px;
+  margin-top: 10px;
   background-color: #CBE86B;
   border: 1px solid #D3643B;
   @include span-columns(3);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .user-window-inner {
   background-color: #D3643B;
-  height: 100px;
-  width: 100%;
   padding-top: 20px;
   text-align: center;
-  border: 1px solid #D3643B;
+  border-radius: 10px;
   }
 
 .user-action-casing {
   background-color: #666666;
   border: 1px solid #D3643B;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
   margin-bottom: 5px;
-  height: 45px;
-  padding-top: 10px;
+  margin-top: 5px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 10px;
 }
 
 .user-action-button {
   border: 1px solid #D3643B;
   border-radius: 25px;
   width: 100px;
-  height: 20px;
   padding-top: 5px;
 }
 

@@ -10,7 +10,7 @@
   <% @links.each do |link| %>
     <tr>
       <td>
-        <hr color="#94C7B6", noshade>
+        <!-- <hr color="#94C7B6", noshade> -->
         USER: <span class="text-links-user"><%= link.user.name.capitalize %></span>
       </td>
     </tr>
@@ -21,12 +21,18 @@
     </tr>
     <tr>
       <td>
+      <div class="text-links-body-style">
         POST: <span class="text-links-body">
-        <%= link.body %><br><br></td>
+        <%= link.body %><br>
+        </span>
+        </div>
+            <br>
+            <br>
+        </td>
+
     </tr>
-  <tbody>
     <% end %>
-  </tbody>
+
 </table>
 
 <br>
@@ -60,10 +66,6 @@
               <%= render "links/form_link" %>
             </div>
           </div>
-
-
-            <span class="text-form-title">
-             <br>GET AN ACCOUNT </span>
 
               <div class="text-form">
               <%= render "users/form" %>
